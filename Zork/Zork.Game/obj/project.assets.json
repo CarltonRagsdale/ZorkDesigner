@@ -751,11 +751,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Game\\Zork.Game.csproj",
+      "projectUniqueName": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
       "projectName": "Zork.Game",
-      "projectPath": "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Game\\Zork.Game.csproj",
+      "projectPath": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
       "packagesPath": "C:\\Users\\ca260782\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Game\\obj\\",
+      "outputPath": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -776,8 +776,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Common\\Zork.Common.csproj": {
-              "projectPath": "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Common\\Zork.Common.csproj"
+            "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
+              "projectPath": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj"
             }
           }
         }

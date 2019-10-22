@@ -11,16 +11,26 @@ using Zork.Common;
 
 namespace Zork.Builder
 {
-    public partial class Form1 : Form
+    public partial class ZorkBuilder : Form
     {
-        public Form1()
+        public ZorkBuilder()
         {
             InitializeComponent();
 
-            Player player = new Player();
+            //Player player = new Player();
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RoomNameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }

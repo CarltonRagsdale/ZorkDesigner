@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Common\\Zork.Common.csproj": {}
+    "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Common\\Zork.Common.csproj": {
+    "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Common\\Zork.Common.csproj",
+        "projectUniqueName": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
         "projectName": "Zork.Common",
-        "projectPath": "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Common\\Zork.Common.csproj",
+        "projectPath": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
         "packagesPath": "C:\\Users\\ca260782\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ca260782\\Desktop\\ZorkCopy\\Zork\\Zork.Common\\obj\\",
+        "outputPath": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
