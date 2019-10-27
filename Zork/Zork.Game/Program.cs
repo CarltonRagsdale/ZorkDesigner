@@ -9,7 +9,7 @@ namespace Zork.Game
         {
             Console.WriteLine("Hello World!");
 
-            const string defaultGameFilename = "Rooms.json";
+            const string defaultGameFilename = "Zork.json";
             string gameFilename = (args.Length > 0 ? args[(int)CommandLineArguments.GameFilename] : defaultGameFilename);
 
             Common.Game game = Common.Game.Load(gameFilename);

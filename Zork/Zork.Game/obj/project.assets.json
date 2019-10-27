@@ -823,25 +823,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ca260782\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Xander\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
+      "projectUniqueName": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
       "projectName": "Zork.Game",
-      "projectPath": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
-      "packagesPath": "C:\\Users\\ca260782\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\obj\\",
+      "projectPath": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
+      "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Game\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ca260782\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -855,8 +853,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
-              "projectPath": "C:\\Users\\ca260782\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj"
+            "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
+              "projectPath": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj"
             }
           }
         }
@@ -878,10 +876,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

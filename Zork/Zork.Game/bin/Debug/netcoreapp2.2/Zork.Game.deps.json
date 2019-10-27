@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "4bf20b3f4b187ddd01af96ea47dda577c5263775"
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
@@ -14,6 +14,7 @@
           "Zork.Game.dll": {}
         }
       },
+      "Microsoft.CSharp/4.6.0": {},
       "Newtonsoft.Json/12.0.2": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
@@ -24,6 +25,7 @@
       },
       "Zork.Common/1.0.0": {
         "dependencies": {
+          "Microsoft.CSharp": "4.6.0",
           "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
@@ -37,6 +39,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.CSharp/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
+      "path": "microsoft.csharp/4.6.0",
+      "hashPath": "microsoft.csharp.4.6.0.nupkg.sha512"
     },
     "Newtonsoft.Json/12.0.2": {
       "type": "package",

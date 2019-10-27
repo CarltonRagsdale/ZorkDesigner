@@ -42,11 +42,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.RoomNameBox = new System.Windows.Forms.TextBox();
             this.NeighborsBox = new System.Windows.Forms.GroupBox();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.neighborViewSouth = new Zork.Builder.NeighborView();
             this.neighborViewWest = new Zork.Builder.NeighborView();
             this.neighborViewEast = new Zork.Builder.NeighborView();
             this.neighborViewNorth = new Zork.Builder.NeighborView();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.RoomInfoGroupBox.SuspendLayout();
             this.DescriptionBox.SuspendLayout();
             this.NeighborsBox.SuspendLayout();
@@ -183,11 +183,6 @@
             this.NeighborsBox.TabStop = false;
             this.NeighborsBox.Text = "Neighbors";
             // 
-            // openFileDialog
-            // 
-            this.openFileDialog.Filter = "Zork World(*json)|*.json";
-            this.openFileDialog.Title = "Select Zork World";
-            // 
             // neighborViewSouth
             // 
             this.neighborViewSouth.Direction = Zork.Common.Directions.South;
@@ -219,6 +214,11 @@
             this.neighborViewNorth.Name = "neighborViewNorth";
             this.neighborViewNorth.Size = new System.Drawing.Size(340, 69);
             this.neighborViewNorth.TabIndex = 8;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Filter = "Zork World(*json)|*.json";
+            this.openFileDialog.Title = "Select Zork World";
             // 
             // ZorkBuilder
             // 
