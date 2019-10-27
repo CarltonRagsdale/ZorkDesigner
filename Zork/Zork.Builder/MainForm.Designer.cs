@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.RoomList = new System.Windows.Forms.ListBox();
             this.NewRoomButton = new System.Windows.Forms.Button();
             this.FileLabel = new System.Windows.Forms.Label();
@@ -42,14 +43,16 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.RoomNameBox = new System.Windows.Forms.TextBox();
             this.NeighborsBox = new System.Windows.Forms.GroupBox();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.neighborViewSouth = new Zork.Builder.NeighborView();
             this.neighborViewWest = new Zork.Builder.NeighborView();
             this.neighborViewEast = new Zork.Builder.NeighborView();
             this.neighborViewNorth = new Zork.Builder.NeighborView();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.worldViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.RoomInfoGroupBox.SuspendLayout();
             this.DescriptionBox.SuspendLayout();
             this.NeighborsBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.worldViewModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // RoomList
@@ -96,6 +99,7 @@
             // 
             // FileNameTextBox
             // 
+            this.FileNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.worldViewModelBindingSource, "Filename", true));
             this.FileNameTextBox.Location = new System.Drawing.Point(35, 3);
             this.FileNameTextBox.Name = "FileNameTextBox";
             this.FileNameTextBox.ReadOnly = true;
@@ -183,6 +187,11 @@
             this.NeighborsBox.TabStop = false;
             this.NeighborsBox.Text = "Neighbors";
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Filter = "Zork World(*json)|*.json";
+            this.openFileDialog.Title = "Select Zork World";
+            // 
             // neighborViewSouth
             // 
             this.neighborViewSouth.Direction = Zork.Common.Directions.South;
@@ -215,10 +224,9 @@
             this.neighborViewNorth.Size = new System.Drawing.Size(340, 69);
             this.neighborViewNorth.TabIndex = 8;
             // 
-            // openFileDialog
+            // worldViewModelBindingSource
             // 
-            this.openFileDialog.Filter = "Zork World(*json)|*.json";
-            this.openFileDialog.Title = "Select Zork World";
+            this.worldViewModelBindingSource.DataSource = typeof(Zork.Builder.WorldView.WorldViewModel);
             // 
             // ZorkBuilder
             // 
@@ -242,6 +250,7 @@
             this.DescriptionBox.ResumeLayout(false);
             this.DescriptionBox.PerformLayout();
             this.NeighborsBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.worldViewModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,6 +277,7 @@
         private NeighborView neighborViewEast;
         private NeighborView neighborViewNorth;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.BindingSource worldViewModelBindingSource;
     }
 }
 

@@ -11,6 +11,9 @@ namespace Zork.Common
     public class Room : IEquatable<Room>
     {
        [JsonProperty(Order = 1)]
+
+       //changed private to public set. Don't kill me 
+       //JK
        public string Name { get; private set; }
 
        [JsonProperty(Order = 2)]

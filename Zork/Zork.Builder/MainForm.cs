@@ -10,20 +10,32 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Zork.Common;
 using Newtonsoft.Json;
+using Zork.Builder.WorldView;
 
 namespace Zork.Builder
 {
     public partial class ZorkBuilder : Form
     {
 
-        private World World
+        private WorldViewModel ViewModel
         {
-            get => mWorld;
-            set => mWorld = value;
+            get => mViewModel;
+            set
+            {
+                if (mViewModel != value)
+                {
+
+
+                    mViewModel = value;
+                    worldViewModelBindingSource.DataSource = mViewModel;
+                }
+            }
+
         }
         public ZorkBuilder()
         {
             InitializeComponent();
+            ViewModel = new WorldViewModel();
 
             //Player player = new Player();
         }
@@ -52,12 +64,12 @@ namespace Zork.Builder
         {
             if (openFileDialog.ShowDialog()==DialogResult.OK)
             {
-                World = JsonConvert.DeserializeObject<World>(File.ReadAllText(openFileDialog.FileName));
-                FileNameTextBox.Text = openFileDialog.FileName;
+                ViewModel.World = JsonConvert.DeserializeObject<World>(File.ReadAllText(openFileDialog.FileName));
+                ViewModel.Filename = openFileDialog.FileName;
             }
 
         }
 
-        private World mWorld;
+        private WorldViewModel mViewModel;
     }
 }

@@ -29,3 +29,4 @@ D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builde
 D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.csproj.CopyComplete
 D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.exe
 D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.pdb
+D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.csproj.Fody.CopyLocal.cache
