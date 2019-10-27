@@ -24,3 +24,11 @@ D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Common\obj\Debug\netstandard2
 D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.deps.json
 D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.dll
 D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.pdb
+C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.csprojAssemblyReference.cache
+C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.AssemblyInfoInputs.cache
+C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.AssemblyInfo.cs
+C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.dll
+C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.pdb
+C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.deps.json
+C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.dll
+C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.pdb

@@ -15,7 +15,7 @@ namespace Zork.Builder.WorldView
 
         public string Filename { get; set; }
 
-        public World World { get; set; }
+        public Game game { get; set; }
 
     }
 }
