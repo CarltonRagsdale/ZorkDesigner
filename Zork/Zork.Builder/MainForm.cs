@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Zork.Common;
 using Newtonsoft.Json;
-using Zork.Builder.WorldView;
+using Zork.Builder.GameViewModelFolder;
 
 namespace Zork.Builder
 {
     public partial class ZorkBuilder : Form
     {
 
-        private WorldViewModel ViewModel
+        private GameViewModel ViewModel
         {
             get => mViewModel;
             set
@@ -27,7 +27,7 @@ namespace Zork.Builder
 
 
                     mViewModel = value;
-                    worldViewModelBindingSource.DataSource = mViewModel;
+                    gameViewModelBindingSource.DataSource = mViewModel;
                 }
             }
 
@@ -35,7 +35,7 @@ namespace Zork.Builder
         public ZorkBuilder()
         {
             InitializeComponent();
-            ViewModel = new WorldViewModel();
+            ViewModel = new GameViewModel();
 
             //Player player = new Player();
         }
@@ -70,6 +70,6 @@ namespace Zork.Builder
 
         }
 
-        private WorldViewModel mViewModel;
+        private GameViewModel mViewModel;
     }
 }

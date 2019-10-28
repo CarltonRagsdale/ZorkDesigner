@@ -48,11 +48,11 @@
             this.neighborViewWest = new Zork.Builder.NeighborView();
             this.neighborViewEast = new Zork.Builder.NeighborView();
             this.neighborViewNorth = new Zork.Builder.NeighborView();
-            this.worldViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gameViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.RoomInfoGroupBox.SuspendLayout();
             this.DescriptionBox.SuspendLayout();
             this.NeighborsBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.worldViewModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // RoomList
@@ -99,7 +99,7 @@
             // 
             // FileNameTextBox
             // 
-            this.FileNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.worldViewModelBindingSource, "Filename", true));
+            this.FileNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gameViewModelBindingSource, "Filename", true));
             this.FileNameTextBox.Location = new System.Drawing.Point(35, 3);
             this.FileNameTextBox.Name = "FileNameTextBox";
             this.FileNameTextBox.ReadOnly = true;
@@ -224,9 +224,9 @@
             this.neighborViewNorth.Size = new System.Drawing.Size(340, 69);
             this.neighborViewNorth.TabIndex = 8;
             // 
-            // worldViewModelBindingSource
+            // gameViewModelBindingSource
             // 
-            this.worldViewModelBindingSource.DataSource = typeof(Zork.Builder.WorldView.WorldViewModel);
+            this.gameViewModelBindingSource.DataSource = typeof(Zork.Builder.GameViewModelFolder.GameViewModel);
             // 
             // ZorkBuilder
             // 
@@ -250,7 +250,7 @@
             this.DescriptionBox.ResumeLayout(false);
             this.DescriptionBox.PerformLayout();
             this.NeighborsBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.worldViewModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,7 +277,7 @@
         private NeighborView neighborViewEast;
         private NeighborView neighborViewNorth;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
-        private System.Windows.Forms.BindingSource worldViewModelBindingSource;
+        private System.Windows.Forms.BindingSource gameViewModelBindingSource;
     }
 }
 

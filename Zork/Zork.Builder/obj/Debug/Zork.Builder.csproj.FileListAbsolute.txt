@@ -46,3 +46,4 @@ C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\De
 C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.csproj.Fody.CopyLocal.cache
 C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.csproj.CopyComplete
+C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\GameViewModelFolder\GameViewModel.cs

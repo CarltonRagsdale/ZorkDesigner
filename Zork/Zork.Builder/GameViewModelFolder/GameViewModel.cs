@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Zork.Common;
 using System.Runtime.CompilerServices;
 
-namespace Zork.Builder.WorldView
+namespace Zork.Builder.GameViewModelFolder
 {
-    public class WorldViewModel : INotifyPropertyChanged
+    class GameViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
