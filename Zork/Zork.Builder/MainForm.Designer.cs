@@ -35,6 +35,7 @@
             this.ListOfRooms = new System.Windows.Forms.ListBox();
             this.SearchBar = new System.Windows.Forms.TextBox();
             this.FileNameTextBox = new System.Windows.Forms.TextBox();
+            this.gameViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fileSelectButton = new System.Windows.Forms.Button();
             this.RoomInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.DeleteButton = new System.Windows.Forms.Button();
@@ -43,16 +44,19 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.RoomNameBox = new System.Windows.Forms.TextBox();
             this.NeighborsBox = new System.Windows.Forms.GroupBox();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.neighborViewSouth = new Zork.Builder.NeighborView();
             this.neighborViewWest = new Zork.Builder.NeighborView();
             this.neighborViewEast = new Zork.Builder.NeighborView();
             this.neighborViewNorth = new Zork.Builder.NeighborView();
-            this.gameViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.RoomListBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).BeginInit();
             this.RoomInfoGroupBox.SuspendLayout();
             this.DescriptionBox.SuspendLayout();
             this.NeighborsBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RoomListBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // RoomList
@@ -105,6 +109,10 @@
             this.FileNameTextBox.ReadOnly = true;
             this.FileNameTextBox.Size = new System.Drawing.Size(572, 20);
             this.FileNameTextBox.TabIndex = 8;
+            // 
+            // gameViewModelBindingSource
+            // 
+            this.gameViewModelBindingSource.DataSource = typeof(Zork.Builder.GameViewModelFolder.GameViewModel);
             // 
             // fileSelectButton
             // 
@@ -187,11 +195,6 @@
             this.NeighborsBox.TabStop = false;
             this.NeighborsBox.Text = "Neighbors";
             // 
-            // openFileDialog
-            // 
-            this.openFileDialog.Filter = "Zork World(*json)|*.json";
-            this.openFileDialog.Title = "Select Zork World";
-            // 
             // neighborViewSouth
             // 
             this.neighborViewSouth.Direction = Zork.Common.Directions.South;
@@ -224,9 +227,19 @@
             this.neighborViewNorth.Size = new System.Drawing.Size(340, 69);
             this.neighborViewNorth.TabIndex = 8;
             // 
-            // gameViewModelBindingSource
+            // openFileDialog
             // 
-            this.gameViewModelBindingSource.DataSource = typeof(Zork.Builder.GameViewModelFolder.GameViewModel);
+            this.openFileDialog.Filter = "Zork World(*json)|*.json";
+            this.openFileDialog.Title = "Select Zork World";
+            // 
+            // RoomListBindingSource
+            // 
+            this.RoomListBindingSource.AllowNew = true;
+            this.RoomListBindingSource.DataSource = this.gameViewModelBindingSource;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(Zork.Common.Room);
             // 
             // ZorkBuilder
             // 
@@ -245,12 +258,14 @@
             this.Name = "ZorkBuilder";
             this.Text = "ZorkBuilder";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).EndInit();
             this.RoomInfoGroupBox.ResumeLayout(false);
             this.RoomInfoGroupBox.PerformLayout();
             this.DescriptionBox.ResumeLayout(false);
             this.DescriptionBox.PerformLayout();
             this.NeighborsBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RoomListBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,6 +293,8 @@
         private NeighborView neighborViewNorth;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.BindingSource gameViewModelBindingSource;
+        private System.Windows.Forms.BindingSource RoomListBindingSource;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
 

@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {}
+    "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
+    "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
+        "projectUniqueName": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
         "projectName": "Zork.Common",
-        "projectPath": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
-        "packagesPath": "C:\\Users\\Carlton Ragsdale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\obj\\",
+        "projectPath": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
+        "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Carlton Ragsdale\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
