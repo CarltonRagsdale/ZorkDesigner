@@ -65,3 +65,4 @@ C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debu
 C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.exe
 C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.pdb
 C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\ViewModels\GameViewModel.cs
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.FormsFolder.AddNewRoomForm.resources

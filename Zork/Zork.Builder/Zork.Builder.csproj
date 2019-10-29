@@ -56,27 +56,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormsFolder\AddNewRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsFolder\AddNewRoomForm.Designer.cs">
+      <DependentUpon>AddNewRoomForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\GameViewModel.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="FormsFolder\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="FormsFolder\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NeighborView.cs">
+    <Compile Include="FormsFolder\NeighborView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NeighborView.Designer.cs">
+    <Compile Include="FormsFolder\NeighborView.Designer.cs">
       <DependentUpon>NeighborView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="FormsFolder\AddNewRoomForm.resx">
+      <DependentUpon>AddNewRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsFolder\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NeighborView.resx">
+    <EmbeddedResource Include="FormsFolder\NeighborView.resx">
       <DependentUpon>NeighborView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

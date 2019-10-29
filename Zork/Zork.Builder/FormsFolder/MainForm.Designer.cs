@@ -1,4 +1,5 @@
-﻿namespace Zork.Builder
+﻿using Zork.Builder.FormsFolder;
+namespace Zork.Builder
 {
     partial class ZorkBuilder
     {
@@ -74,6 +75,7 @@
             this.NewRoomButton.TabIndex = 3;
             this.NewRoomButton.Text = "Add New";
             this.NewRoomButton.UseVisualStyleBackColor = true;
+            this.NewRoomButton.Click += new System.EventHandler(this.NewRoomButton_Click);
             // 
             // FileLabel
             // 

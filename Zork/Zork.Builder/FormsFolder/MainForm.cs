@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Zork.Common;
 using Newtonsoft.Json;
 using Zork.Builder.ViewModels;
+using Zork.Builder.FormsFolder;
 
 namespace Zork.Builder
 {
@@ -47,5 +48,16 @@ namespace Zork.Builder
         }
 
         private GameViewModel mViewModel;
+
+        private void NewRoomButton_Click(object sender, EventArgs e)
+        {
+            using(AddNewRoomForm addRoomForm = new AddNewRoomForm())
+            {
+                if (addRoomForm.ShowDialog() == DialogResult.OK)
+                {
+                    //DO MEMES
+                }
+            }
+        }
     }
 }
