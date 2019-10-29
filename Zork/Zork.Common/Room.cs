@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
@@ -8,9 +9,12 @@ using Newtonsoft.Json;
 namespace Zork.Common
 {
     //[JsonConverter(typeof(RoomConverter))]
-    public class Room : IEquatable<Room>
+    public class Room : IEquatable<Room> , INotifyPropertyChanged
     {
-       [JsonProperty(Order = 1)]
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [JsonProperty(Order = 1)]
 
        //changed private to public set. Don't kill me 
        //JK

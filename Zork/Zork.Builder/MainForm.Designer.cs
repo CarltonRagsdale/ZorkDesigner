@@ -33,9 +33,12 @@
             this.NewRoomButton = new System.Windows.Forms.Button();
             this.FileLabel = new System.Windows.Forms.Label();
             this.ListOfRooms = new System.Windows.Forms.ListBox();
+            this.RoomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.WorldBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gameViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SearchBar = new System.Windows.Forms.TextBox();
             this.FileNameTextBox = new System.Windows.Forms.TextBox();
-            this.gameViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fileSelectButton = new System.Windows.Forms.Button();
             this.RoomInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.DeleteButton = new System.Windows.Forms.Button();
@@ -49,14 +52,13 @@
             this.neighborViewEast = new Zork.Builder.NeighborView();
             this.neighborViewNorth = new Zork.Builder.NeighborView();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.RoomListBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.RoomsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WorldBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).BeginInit();
             this.RoomInfoGroupBox.SuspendLayout();
             this.DescriptionBox.SuspendLayout();
             this.NeighborsBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RoomListBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // RoomList
@@ -88,11 +90,31 @@
             // 
             // ListOfRooms
             // 
+            this.ListOfRooms.DataSource = this.RoomsBindingSource;
             this.ListOfRooms.FormattingEnabled = true;
             this.ListOfRooms.Location = new System.Drawing.Point(12, 74);
             this.ListOfRooms.Name = "ListOfRooms";
             this.ListOfRooms.Size = new System.Drawing.Size(214, 433);
             this.ListOfRooms.TabIndex = 6;
+            // 
+            // RoomsBindingSource
+            // 
+            this.RoomsBindingSource.DataMember = "Rooms";
+            this.RoomsBindingSource.DataSource = this.WorldBindingSource;
+            // 
+            // WorldBindingSource
+            // 
+            this.WorldBindingSource.DataMember = "World";
+            this.WorldBindingSource.DataSource = this.gameBindingSource;
+            // 
+            // gameBindingSource
+            // 
+            this.gameBindingSource.DataMember = "game";
+            this.gameBindingSource.DataSource = this.gameViewModelBindingSource;
+            // 
+            // gameViewModelBindingSource
+            // 
+            this.gameViewModelBindingSource.DataSource = typeof(Zork.Builder.GameViewModelFolder.GameViewModel);
             // 
             // SearchBar
             // 
@@ -109,10 +131,6 @@
             this.FileNameTextBox.ReadOnly = true;
             this.FileNameTextBox.Size = new System.Drawing.Size(572, 20);
             this.FileNameTextBox.TabIndex = 8;
-            // 
-            // gameViewModelBindingSource
-            // 
-            this.gameViewModelBindingSource.DataSource = typeof(Zork.Builder.GameViewModelFolder.GameViewModel);
             // 
             // fileSelectButton
             // 
@@ -232,15 +250,6 @@
             this.openFileDialog.Filter = "Zork World(*json)|*.json";
             this.openFileDialog.Title = "Select Zork World";
             // 
-            // RoomListBindingSource
-            // 
-            this.RoomListBindingSource.AllowNew = true;
-            this.RoomListBindingSource.DataSource = this.gameViewModelBindingSource;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(Zork.Common.Room);
-            // 
             // ZorkBuilder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,14 +267,15 @@
             this.Name = "ZorkBuilder";
             this.Text = "ZorkBuilder";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.RoomsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WorldBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).EndInit();
             this.RoomInfoGroupBox.ResumeLayout(false);
             this.RoomInfoGroupBox.PerformLayout();
             this.DescriptionBox.ResumeLayout(false);
             this.DescriptionBox.PerformLayout();
             this.NeighborsBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.RoomListBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,8 +303,9 @@
         private NeighborView neighborViewNorth;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.BindingSource gameViewModelBindingSource;
-        private System.Windows.Forms.BindingSource RoomListBindingSource;
-        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.BindingSource gameBindingSource;
+        private System.Windows.Forms.BindingSource WorldBindingSource;
+        private System.Windows.Forms.BindingSource RoomsBindingSource;
     }
 }
 
