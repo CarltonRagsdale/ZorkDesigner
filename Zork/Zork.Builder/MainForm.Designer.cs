@@ -33,9 +33,7 @@
             this.NewRoomButton = new System.Windows.Forms.Button();
             this.FileLabel = new System.Windows.Forms.Label();
             this.ListOfRooms = new System.Windows.Forms.ListBox();
-            this.RoomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.WorldBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gameViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SearchBar = new System.Windows.Forms.TextBox();
             this.FileNameTextBox = new System.Windows.Forms.TextBox();
@@ -52,9 +50,7 @@
             this.neighborViewEast = new Zork.Builder.NeighborView();
             this.neighborViewNorth = new Zork.Builder.NeighborView();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.RoomsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WorldBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).BeginInit();
             this.RoomInfoGroupBox.SuspendLayout();
             this.DescriptionBox.SuspendLayout();
@@ -90,31 +86,23 @@
             // 
             // ListOfRooms
             // 
-            this.ListOfRooms.DataSource = this.RoomsBindingSource;
+            this.ListOfRooms.DataSource = this.roomsBindingSource;
+            this.ListOfRooms.DisplayMember = "Name";
             this.ListOfRooms.FormattingEnabled = true;
             this.ListOfRooms.Location = new System.Drawing.Point(12, 74);
             this.ListOfRooms.Name = "ListOfRooms";
             this.ListOfRooms.Size = new System.Drawing.Size(214, 433);
             this.ListOfRooms.TabIndex = 6;
+            this.ListOfRooms.ValueMember = "Description";
             // 
-            // RoomsBindingSource
+            // roomsBindingSource
             // 
-            this.RoomsBindingSource.DataMember = "Rooms";
-            this.RoomsBindingSource.DataSource = this.WorldBindingSource;
-            // 
-            // WorldBindingSource
-            // 
-            this.WorldBindingSource.DataMember = "World";
-            this.WorldBindingSource.DataSource = this.gameBindingSource;
-            // 
-            // gameBindingSource
-            // 
-            this.gameBindingSource.DataMember = "game";
-            this.gameBindingSource.DataSource = this.gameViewModelBindingSource;
+            this.roomsBindingSource.DataMember = "Rooms";
+            this.roomsBindingSource.DataSource = this.gameViewModelBindingSource;
             // 
             // gameViewModelBindingSource
             // 
-            this.gameViewModelBindingSource.DataSource = typeof(Zork.Builder.GameViewModelFolder.GameViewModel);
+            this.gameViewModelBindingSource.DataSource = typeof(Zork.Builder.ViewModels.GameViewModel);
             // 
             // SearchBar
             // 
@@ -154,7 +142,6 @@
             this.RoomInfoGroupBox.Size = new System.Drawing.Size(397, 524);
             this.RoomInfoGroupBox.TabIndex = 10;
             this.RoomInfoGroupBox.TabStop = false;
-            this.RoomInfoGroupBox.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // DeleteButton
             // 
@@ -186,6 +173,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.roomsBindingSource, "Description", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.textBox1.Location = new System.Drawing.Point(7, 20);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -194,9 +182,9 @@
             // 
             // RoomNameBox
             // 
+            this.RoomNameBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.roomsBindingSource, "Name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.RoomNameBox.Location = new System.Drawing.Point(30, 42);
             this.RoomNameBox.Name = "RoomNameBox";
-            this.RoomNameBox.ReadOnly = true;
             this.RoomNameBox.Size = new System.Drawing.Size(347, 20);
             this.RoomNameBox.TabIndex = 6;
             // 
@@ -266,10 +254,7 @@
             this.MaximizeBox = false;
             this.Name = "ZorkBuilder";
             this.Text = "ZorkBuilder";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.RoomsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WorldBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).EndInit();
             this.RoomInfoGroupBox.ResumeLayout(false);
             this.RoomInfoGroupBox.PerformLayout();
@@ -302,10 +287,8 @@
         private NeighborView neighborViewEast;
         private NeighborView neighborViewNorth;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.BindingSource roomsBindingSource;
         private System.Windows.Forms.BindingSource gameViewModelBindingSource;
-        private System.Windows.Forms.BindingSource gameBindingSource;
-        private System.Windows.Forms.BindingSource WorldBindingSource;
-        private System.Windows.Forms.BindingSource RoomsBindingSource;
     }
 }
 

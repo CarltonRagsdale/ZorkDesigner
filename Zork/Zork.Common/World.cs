@@ -8,10 +8,10 @@ using Newtonsoft.Json;
 
 namespace Zork.Common
 {
-    public class World //: INotifyPropertyChanged
+    public class World : INotifyPropertyChanged
     {
 
-        //public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public HashSet<Room> Rooms { get; set; }
 

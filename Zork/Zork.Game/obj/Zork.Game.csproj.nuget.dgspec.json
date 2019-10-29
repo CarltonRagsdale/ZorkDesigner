@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj": {}
+    "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
+    "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
+        "projectUniqueName": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
         "projectName": "Zork.Common",
-        "projectPath": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
-        "packagesPath": "C:\\Users\\Carlton Ragsdale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\obj\\",
+        "projectPath": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj",
+        "packagesPath": "C:\\Users\\carlt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Carlton Ragsdale\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carlt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +38,12 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Microsoft.CSharp": {
               "target": "Package",
               "version": "[4.6.0, )"
@@ -54,6 +57,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.2, )"
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             }
           },
           "imports": [
@@ -70,20 +77,17 @@
         }
       }
     },
-    "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj": {
+    "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
+        "projectUniqueName": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
         "projectName": "Zork.Game",
-        "projectPath": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
-        "packagesPath": "C:\\Users\\Carlton Ragsdale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\obj\\",
+        "projectPath": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
+        "packagesPath": "C:\\Users\\carlt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Carlton Ragsdale\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carlt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,8 +100,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
-                "projectPath": "C:\\Users\\Carlton Ragsdale\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj"
+              "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
+                "projectPath": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj"
               }
             }
           }

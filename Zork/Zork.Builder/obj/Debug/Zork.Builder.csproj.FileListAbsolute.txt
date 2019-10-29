@@ -48,3 +48,20 @@ C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\De
 C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.csproj.CopyComplete
 C:\Users\Carlton Ragsdale\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\GameViewModelFolder\GameViewModel.cs
 D:\Projects\Github Projects\ZorkDesigner\Zork\Zork.Builder\bin\Debug\GameViewModelFolder\GameViewModel.cs
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\Zork.Builder.exe.config
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\Zork.Builder.exe
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\Zork.Builder.pdb
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\Zork.Common.dll
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\Zork.Common.pdb
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.csprojAssemblyReference.cache
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.ZorkBuilder.resources
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.NeighborView.resources
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.Properties.Resources.resources
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.csproj.GenerateResource.cache
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.csproj.Fody.CopyLocal.cache
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.csproj.CopyComplete
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.exe
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\obj\Debug\Zork.Builder.pdb
+C:\Users\carlt\OneDrive\Documents\GitHub\ZorkDesigner\Zork\Zork.Builder\bin\Debug\ViewModels\GameViewModel.cs
