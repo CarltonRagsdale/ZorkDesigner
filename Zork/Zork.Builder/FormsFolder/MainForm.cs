@@ -31,10 +31,16 @@ namespace Zork.Builder
             }
 
         }
+
+        private bool isWorldLoaded { get => mIsWorldLoaded;
+                                     set { mIsWorldLoaded = value; }
+                                   }
+
         public ZorkBuilder()
         {
             InitializeComponent();
             ViewModel = new GameViewModel();
+            isWorldLoaded = false;
         }
 
         private void FileSelectButton_Click(object sender, EventArgs e)
@@ -43,11 +49,13 @@ namespace Zork.Builder
             {
                 ViewModel.Game = JsonConvert.DeserializeObject<Game>(File.ReadAllText(openFileDialog.FileName));
                 ViewModel.Filename = openFileDialog.FileName;
+                isWorldLoaded = true;
             }
 
         }
 
         private GameViewModel mViewModel;
+        private bool mIsWorldLoaded;
 
         private void NewRoomButton_Click(object sender, EventArgs e)
         {
