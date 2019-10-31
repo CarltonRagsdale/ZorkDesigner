@@ -55,7 +55,8 @@ namespace Zork.Builder
             {
                 if (addRoomForm.ShowDialog() == DialogResult.OK)
                 {
-                    //DO MEMES
+                    Room room = new Room { Name = addRoomForm.RoomName };
+                    ViewModel.Rooms.Add(room);
                 }
             }
         }

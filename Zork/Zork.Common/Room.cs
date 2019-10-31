@@ -18,10 +18,10 @@ namespace Zork.Common
 
        //changed private to public set. Don't kill me 
        //JK
-       public string Name { get; private set; }
+       public string Name { get; /* private */ set; }
 
        [JsonProperty(Order = 2)]
-       public string Description { get; private set; }
+       public string Description { get; /* private */ set; }
 
         [JsonProperty(PropertyName = "Neighbors", Order = 3)]
         private Dictionary<Directions, string> NeighborsNames { get; set; }
