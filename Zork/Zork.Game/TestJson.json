@@ -3,7 +3,7 @@
     "Rooms": [
       {
         "Name": "West of House",
-        "Description": "This is an open field west of a white house, with a boarded front door.",
+        "Description": "This is an open field west of a white house, with a boarded front door. REEEEEEEE",
         "Neighbors": {
           "North": "North of House",
           "South": "South of House",
@@ -67,6 +67,11 @@
           "West": "Forest 2",
           "South": "Forest 3"
         }
+      },
+      {
+        "Name": "REEEEEE",
+        "Description": "",
+        "Neighbors": {}
       }
     ],
     "StartingLocation": "West of House"
