@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 using System.Windows.Forms;
 using Zork.Common;
 using Newtonsoft.Json;
@@ -17,6 +18,8 @@ namespace Zork.Builder
 {
     public partial class ZorkBuilder : Form
     {
+
+        public static string AssemblyTitle = Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyTitleAttribute>().Title;
 
         private GameViewModel ViewModel
         {
@@ -33,7 +36,10 @@ namespace Zork.Builder
         }
 
         private bool isWorldLoaded { get => mIsWorldLoaded;
-                                     set { mIsWorldLoaded = value; }
+                                     set 
+                                     { 
+                                        mIsWorldLoaded = value;
+                                     }
                                    }
 
         public ZorkBuilder()
@@ -42,20 +48,6 @@ namespace Zork.Builder
             ViewModel = new GameViewModel();
             isWorldLoaded = false;
         }
-
-        private void FileSelectButton_Click(object sender, EventArgs e)
-        {
-            if (openFileDialog.ShowDialog()==DialogResult.OK)
-            {
-                ViewModel.Game = JsonConvert.DeserializeObject<Game>(File.ReadAllText(openFileDialog.FileName));
-                ViewModel.Filename = openFileDialog.FileName;
-                isWorldLoaded = true;
-            }
-
-        }
-
-        private GameViewModel mViewModel;
-        private bool mIsWorldLoaded;
 
         private void NewRoomButton_Click(object sender, EventArgs e)
         {
@@ -67,6 +59,40 @@ namespace Zork.Builder
                     ViewModel.Rooms.Add(room);
                 }
             }
+        }
+
+        private void ListOfRooms_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DeleteButton.Enabled = RoomList.SelectedItem != null;
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+
+            if(MessageBox.Show("Delete this room?", AssemblyTitle, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                ViewModel.Rooms.Remove((Room)ListOfRooms.SelectedItem);
+                ListOfRooms.SelectedItem = ViewModel.Rooms.FirstOrDefault();
+            }
+
+        }
+
+        private GameViewModel mViewModel;
+        private bool mIsWorldLoaded;
+
+        private void openGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ViewModel.Game = JsonConvert.DeserializeObject<Game>(File.ReadAllText(openFileDialog.FileName));
+                ViewModel.Filename = openFileDialog.FileName;
+                isWorldLoaded = true;
+            }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
