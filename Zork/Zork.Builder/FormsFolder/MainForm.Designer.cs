@@ -87,8 +87,10 @@ namespace Zork.Builder
             // 
             // ListOfRooms
             // 
+            this.ListOfRooms.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ListOfRooms.DataSource = this.roomsBindingSource;
             this.ListOfRooms.DisplayMember = "Name";
+            this.ListOfRooms.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ListOfRooms.FormattingEnabled = true;
             this.ListOfRooms.Location = new System.Drawing.Point(13, 98);
             this.ListOfRooms.Name = "ListOfRooms";
@@ -108,6 +110,7 @@ namespace Zork.Builder
             // 
             // SearchBar
             // 
+            this.SearchBar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.SearchBar.Location = new System.Drawing.Point(12, 69);
             this.SearchBar.Name = "SearchBar";
             this.SearchBar.Size = new System.Drawing.Size(213, 20);
@@ -159,6 +162,7 @@ namespace Zork.Builder
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.roomsBindingSource, "Description", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.textBox1.Location = new System.Drawing.Point(7, 20);
             this.textBox1.Multiline = true;
@@ -168,7 +172,7 @@ namespace Zork.Builder
             // 
             // RoomNameBox
             // 
-            this.RoomNameBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.RoomNameBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.RoomNameBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.roomsBindingSource, "Name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.RoomNameBox.Location = new System.Drawing.Point(30, 42);
             this.RoomNameBox.Name = "RoomNameBox";
@@ -214,6 +218,7 @@ namespace Zork.Builder
             // 
             // neighborViewNorth
             // 
+            this.neighborViewNorth.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.neighborViewNorth.Direction = Zork.Common.Directions.North;
             this.neighborViewNorth.Location = new System.Drawing.Point(6, 19);
             this.neighborViewNorth.Name = "neighborViewNorth";
