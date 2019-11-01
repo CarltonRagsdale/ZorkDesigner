@@ -8,7 +8,8 @@ using Zork.Common;
 
 namespace Zork
 {
-   /* public class RoomConverter : JsonConverter
+    /*
+    public class RoomConverter : JsonConverter
     {
         public override bool CanConvert(Type objectType) => objectType.IsAssignableFrom(typeof(Room));
 ​

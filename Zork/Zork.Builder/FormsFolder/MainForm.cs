@@ -77,9 +77,8 @@ namespace Zork.Builder
 
         }
 
-        private GameViewModel mViewModel;
-        private bool mIsWorldLoaded;
 
+        #region Main Menu
         private void openGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -90,9 +89,27 @@ namespace Zork.Builder
             }
         }
 
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewModel.SaveWorld();
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(SaveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ViewModel.Filename = SaveFileDialog.FileName;
+                ViewModel.SaveWorld();
+            }
+        }
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        #endregion Main Menu
+
+        private GameViewModel mViewModel;
+        private bool mIsWorldLoaded;
     }
 }

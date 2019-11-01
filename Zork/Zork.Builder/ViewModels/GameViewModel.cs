@@ -19,8 +19,15 @@ namespace Zork.Builder.ViewModels
 
         public BindingList<Room> Rooms { get; set; }
 
+        public GameViewModel()
+        {
+            Rooms = new BindingList<Room>();
+        }
+
         public Game Game 
         {
+
+            get => mGame;
             set
             {
                 if (mGame != value)

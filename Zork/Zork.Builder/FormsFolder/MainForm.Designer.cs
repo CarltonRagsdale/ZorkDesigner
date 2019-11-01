@@ -55,6 +55,7 @@ namespace Zork.Builder
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameViewModelBindingSource)).BeginInit();
             this.RoomInfoGroupBox.SuspendLayout();
@@ -67,9 +68,9 @@ namespace Zork.Builder
             // 
             this.RoomList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.RoomList.FormattingEnabled = true;
-            this.RoomList.Location = new System.Drawing.Point(1, 46);
+            this.RoomList.Location = new System.Drawing.Point(1, 33);
             this.RoomList.Name = "RoomList";
-            this.RoomList.Size = new System.Drawing.Size(238, 563);
+            this.RoomList.Size = new System.Drawing.Size(238, 576);
             this.RoomList.TabIndex = 0;
             // 
             // NewRoomButton
@@ -87,9 +88,9 @@ namespace Zork.Builder
             this.ListOfRooms.DataSource = this.roomsBindingSource;
             this.ListOfRooms.DisplayMember = "Name";
             this.ListOfRooms.FormattingEnabled = true;
-            this.ListOfRooms.Location = new System.Drawing.Point(13, 124);
+            this.ListOfRooms.Location = new System.Drawing.Point(13, 98);
             this.ListOfRooms.Name = "ListOfRooms";
-            this.ListOfRooms.Size = new System.Drawing.Size(214, 446);
+            this.ListOfRooms.Size = new System.Drawing.Size(214, 472);
             this.ListOfRooms.TabIndex = 6;
             this.ListOfRooms.ValueMember = "Description";
             this.ListOfRooms.SelectedIndexChanged += new System.EventHandler(this.ListOfRooms_SelectedIndexChanged);
@@ -105,7 +106,7 @@ namespace Zork.Builder
             // 
             // SearchBar
             // 
-            this.SearchBar.Location = new System.Drawing.Point(12, 82);
+            this.SearchBar.Location = new System.Drawing.Point(12, 69);
             this.SearchBar.Name = "SearchBar";
             this.SearchBar.Size = new System.Drawing.Size(213, 20);
             this.SearchBar.TabIndex = 7;
@@ -117,9 +118,9 @@ namespace Zork.Builder
             this.RoomInfoGroupBox.Controls.Add(this.DescriptionBox);
             this.RoomInfoGroupBox.Controls.Add(this.RoomNameBox);
             this.RoomInfoGroupBox.Controls.Add(this.NeighborsBox);
-            this.RoomInfoGroupBox.Location = new System.Drawing.Point(245, 40);
+            this.RoomInfoGroupBox.Location = new System.Drawing.Point(245, 27);
             this.RoomInfoGroupBox.Name = "RoomInfoGroupBox";
-            this.RoomInfoGroupBox.Size = new System.Drawing.Size(397, 569);
+            this.RoomInfoGroupBox.Size = new System.Drawing.Size(397, 582);
             this.RoomInfoGroupBox.TabIndex = 10;
             this.RoomInfoGroupBox.TabStop = false;
             // 
@@ -145,7 +146,7 @@ namespace Zork.Builder
             // DescriptionBox
             // 
             this.DescriptionBox.Controls.Add(this.textBox1);
-            this.DescriptionBox.Location = new System.Drawing.Point(26, 73);
+            this.DescriptionBox.Location = new System.Drawing.Point(26, 85);
             this.DescriptionBox.Name = "DescriptionBox";
             this.DescriptionBox.Size = new System.Drawing.Size(354, 109);
             this.DescriptionBox.TabIndex = 7;
@@ -175,7 +176,7 @@ namespace Zork.Builder
             this.NeighborsBox.Controls.Add(this.neighborViewWest);
             this.NeighborsBox.Controls.Add(this.neighborViewEast);
             this.NeighborsBox.Controls.Add(this.neighborViewNorth);
-            this.NeighborsBox.Location = new System.Drawing.Point(26, 188);
+            this.NeighborsBox.Location = new System.Drawing.Point(26, 217);
             this.NeighborsBox.Name = "NeighborsBox";
             this.NeighborsBox.Size = new System.Drawing.Size(354, 291);
             this.NeighborsBox.TabIndex = 5;
@@ -255,12 +256,14 @@ namespace Zork.Builder
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As...";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -274,6 +277,11 @@ namespace Zork.Builder
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // SaveFileDialog
+            // 
+            this.SaveFileDialog.Filter = "Zork World(*json)|*.json";
+            this.SaveFileDialog.Title = "Save game file";
             // 
             // ZorkBuilder
             // 
@@ -330,6 +338,7 @@ namespace Zork.Builder
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog SaveFileDialog;
     }
 }
 

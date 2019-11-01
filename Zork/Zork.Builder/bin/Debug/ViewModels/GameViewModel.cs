@@ -19,8 +19,15 @@ namespace Zork.Builder.ViewModels
 
         public BindingList<Room> Rooms { get; set; }
 
+        public GameViewModel()
+        {
+            Rooms = new BindingList<Room>();
+        }
+
         public Game Game 
         {
+
+            get => mGame;
             set
             {
                 if (mGame != value)
@@ -35,6 +42,25 @@ namespace Zork.Builder.ViewModels
                         Rooms = new BindingList<Room>(Array.Empty<Room>());
                     }
                 }
+            }
+        }
+
+        public void SaveWorld()
+        {
+            if (string.IsNullOrEmpty(Filename))
+            {
+                throw new InvalidProgramException("Filename expected.");
+            }
+
+            JsonSerializer serializer = new JsonSerializer
+            {
+                Formatting = Formatting.Indented
+            };
+
+            using (StreamWriter streamWriter = new StreamWriter(Filename))
+            using (JsonWriter jsonWriter = new JsonTextWriter(streamWriter))
+            {
+                serializer.Serialize(jsonWriter, mGame);
             }
         }
 
