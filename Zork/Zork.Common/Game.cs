@@ -19,11 +19,19 @@ namespace Zork.Common
         [JsonIgnore]
         private bool isRunning { get; set; }
 
-        public Game(World world, Player player)
+        public Game(World world, Player player, Dictionary<Directions, string> DirectionLocNames = null)
         {
             World = world;
             Player = player;
+            DirectionLocNames = DirectionLocNames;
+            DirectionL = new Dictionary<Directions, Room>();
         }
+
+        [JsonProperty(PropertyName = "DirectionLoc")]
+        private Dictionary<Directions, string> DirectionLocNames { get; set; }
+
+        [JsonIgnore]
+        public Dictionary<Directions, Room> DirectionL { get; set; }
 
 
         public void Run()

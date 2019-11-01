@@ -859,20 +859,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carlt\\.nuget\\packages\\": {}
+    "C:\\Users\\Xander\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
+      "projectUniqueName": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
       "projectName": "Zork.Game",
-      "projectPath": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
-      "packagesPath": "C:\\Users\\carlt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Game\\obj\\",
+      "projectPath": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Game\\Zork.Game.csproj",
+      "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Game\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\carlt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -884,8 +889,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
-              "projectPath": "C:\\Users\\carlt\\OneDrive\\Documents\\GitHub\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj"
+            "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj": {
+              "projectPath": "D:\\Projects\\Github Projects\\ZorkDesigner\\Zork\\Zork.Common\\Zork.Common.csproj"
             }
           }
         }

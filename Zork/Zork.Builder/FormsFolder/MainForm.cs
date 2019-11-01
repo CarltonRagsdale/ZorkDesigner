@@ -29,18 +29,18 @@ namespace Zork.Builder
                 if (mViewModel != value)
                 {
                     mViewModel = value;
-                   gameViewModelBindingSource.DataSource = mViewModel;
+                    gameViewModelBindingSource.DataSource = mViewModel;
                 }
             }
 
         }
 
-        private bool isWorldLoaded { get => mIsWorldLoaded;
-                                     set 
-                                     { 
-                                        mIsWorldLoaded = value;
-                                     }
-                                   }
+        private bool isWorldLoaded 
+        { 
+            get => mIsWorldLoaded;
+            set => mIsWorldLoaded = value;
+                                     
+        }
 
         public ZorkBuilder()
         {

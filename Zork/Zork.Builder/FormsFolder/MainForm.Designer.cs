@@ -67,6 +67,7 @@ namespace Zork.Builder
             // RoomList
             // 
             this.RoomList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.RoomList.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.RoomList.FormattingEnabled = true;
             this.RoomList.Location = new System.Drawing.Point(1, 33);
             this.RoomList.Name = "RoomList";
@@ -75,12 +76,13 @@ namespace Zork.Builder
             // 
             // NewRoomButton
             // 
+            this.NewRoomButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.NewRoomButton.Location = new System.Drawing.Point(53, 576);
             this.NewRoomButton.Name = "NewRoomButton";
             this.NewRoomButton.Size = new System.Drawing.Size(143, 23);
             this.NewRoomButton.TabIndex = 3;
             this.NewRoomButton.Text = "Add New";
-            this.NewRoomButton.UseVisualStyleBackColor = true;
+            this.NewRoomButton.UseVisualStyleBackColor = false;
             this.NewRoomButton.Click += new System.EventHandler(this.NewRoomButton_Click);
             // 
             // ListOfRooms
@@ -113,6 +115,7 @@ namespace Zork.Builder
             // 
             // RoomInfoGroupBox
             // 
+            this.RoomInfoGroupBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.RoomInfoGroupBox.Controls.Add(this.DeleteButton);
             this.RoomInfoGroupBox.Controls.Add(this.RoomNameLabel);
             this.RoomInfoGroupBox.Controls.Add(this.DescriptionBox);
@@ -126,12 +129,13 @@ namespace Zork.Builder
             // 
             // DeleteButton
             // 
+            this.DeleteButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.DeleteButton.Location = new System.Drawing.Point(302, 536);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(78, 23);
             this.DeleteButton.TabIndex = 9;
             this.DeleteButton.Text = "Delete Room";
-            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.UseVisualStyleBackColor = false;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // RoomNameLabel
@@ -164,6 +168,7 @@ namespace Zork.Builder
             // 
             // RoomNameBox
             // 
+            this.RoomNameBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.RoomNameBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.roomsBindingSource, "Name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.RoomNameBox.Location = new System.Drawing.Point(30, 42);
             this.RoomNameBox.Name = "RoomNameBox";
@@ -222,6 +227,7 @@ namespace Zork.Builder
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -287,6 +293,7 @@ namespace Zork.Builder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(654, 611);
             this.Controls.Add(this.RoomInfoGroupBox);
             this.Controls.Add(this.SearchBar);
@@ -322,7 +329,6 @@ namespace Zork.Builder
         private System.Windows.Forms.Label RoomNameLabel;
         private System.Windows.Forms.GroupBox DescriptionBox;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox RoomNameBox;
         private System.Windows.Forms.GroupBox NeighborsBox;
         private NeighborView neighborViewSouth;
         private NeighborView neighborViewWest;
@@ -339,6 +345,7 @@ namespace Zork.Builder
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog SaveFileDialog;
+        public System.Windows.Forms.TextBox RoomNameBox;
     }
 }
 
