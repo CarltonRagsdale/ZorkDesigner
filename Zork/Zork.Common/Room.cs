@@ -27,7 +27,7 @@ namespace Zork.Common
         private Dictionary<Directions, string> NeighborsNames { get; set; }
 
         [JsonIgnore]
-        public IReadOnlyDictionary<Directions, Room> Neighbors { get; private set; }
+        public Dictionary<Directions, Room> Neighbors { get; private set; }
 
         public static bool operator == (Room lhs, Room rhs)
         {
@@ -69,7 +69,7 @@ namespace Zork.Common
         public override int GetHashCode() => Name.GetHashCode();
 
         public void UpdateNeighbors(World world) => Neighbors = (from entry in NeighborsNames
-                                                                 let room = world.RoomsByName.GetValueOrDefault(entry.Value)
+                                                                 let room = rooms.Find(i => i.Name.Equals(entry.Value, System.StringComparison.InvariantCultureIgnoreCase))
                                                                  where room != null
                                                                  select (Direction: entry.Key, Room: room)).ToDictionary(pair => pair.Direction, pair => pair.Room);
 
