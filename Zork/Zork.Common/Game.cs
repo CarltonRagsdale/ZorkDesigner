@@ -4,6 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
+using System.Runtime.Serialization;
 
 namespace Zork.Common
 {
@@ -61,7 +62,7 @@ namespace Zork.Common
                         }
                         break;
                     case Commands.UNKNOWN:
-                        Console.WriteLine("Uknown Command.");
+                        Console.WriteLine("Unknown Command.");
                         break;
                 }
             }
@@ -75,5 +76,8 @@ namespace Zork.Common
         }
 
         private static Commands ToCommand(string commandString) => Enum.TryParse<Commands>(commandString, true, out Commands result) ? result : Commands.UNKNOWN;
+
+
+        
     }
 }
