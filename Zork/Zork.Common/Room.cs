@@ -68,15 +68,10 @@ namespace Zork.Common
 
         public override int GetHashCode() => Name.GetHashCode();
 
-        public void UpdateNeighbors(List<Room> rooms)
-        {
-            Neighbors = (from entry in NeighborsNames
-                         let room = rooms.Find(i => i.Name.Equals(entry.Value, System.StringComparison.InvariantCultureIgnoreCase))
-                         where room != null
-                         select (Direction: entry.Key, Room: room)).
-                         ToDictionary(pair => pair.Direction, pair => pair.Room);
+        public void UpdateNeighbors(World world) => Neighbors = (from entry in NeighborsNames
+                                                                 let room = world.RoomsByName.GetValueOrDefault(entry.Value)
+                                                                 where room != null
+                                                                 select (Direction: entry.Key, Room: room)).ToDictionary(pair => pair.Direction, pair => pair.Room);
 
-            NeighborsNames.Clear();
-        }
     }
 }
