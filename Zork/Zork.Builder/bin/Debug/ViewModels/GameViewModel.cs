@@ -35,7 +35,7 @@ namespace Zork.Builder.ViewModels
                     mGame = value;
                     if (mGame != null && mGame.World != null && mGame.World.Rooms != null)
                     {
-                        Rooms = new BindingList<Room>(mGame.World.Rooms.ToList());
+                        Rooms = new BindingList<Room>(mGame.World.Rooms);
                     }
                     else
                     {

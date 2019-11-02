@@ -27,7 +27,7 @@ namespace Zork.Common
         private Dictionary<Directions, string> NeighborsNames { get; set; }
 
         [JsonIgnore]
-        public Dictionary<Directions, Room> Neighbors { get; private set; }
+        public IReadOnlyDictionary<Directions, Room> Neighbors { get; private set; }
 
         public static bool operator == (Room lhs, Room rhs)
         {
@@ -72,6 +72,5 @@ namespace Zork.Common
                                                                  let room = world.RoomsByName.GetValueOrDefault(entry.Value)
                                                                  where room != null
                                                                  select (Direction: entry.Key, Room: room)).ToDictionary(pair => pair.Direction, pair => pair.Room);
-
     }
 }
