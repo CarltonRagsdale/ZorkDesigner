@@ -48,7 +48,7 @@ namespace Zork.Builder
             this.neighborViewEast = new Zork.Builder.NeighborView();
             this.neighborViewNorth = new Zork.Builder.NeighborView();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,7 +61,7 @@ namespace Zork.Builder
             this.RoomInfoGroupBox.SuspendLayout();
             this.DescriptionBox.SuspendLayout();
             this.NeighborsBox.SuspendLayout();
-            this.menuStrip.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // RoomList
@@ -230,16 +230,16 @@ namespace Zork.Builder
             this.openFileDialog.Filter = "Zork World(*json)|*.json";
             this.openFileDialog.Title = "Select Zork World";
             // 
-            // menuStrip
+            // menuStrip1
             // 
-            this.menuStrip.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(654, 24);
-            this.menuStrip.TabIndex = 11;
-            this.menuStrip.Text = "menuStrip1";
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(654, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -305,7 +305,7 @@ namespace Zork.Builder
             this.Controls.Add(this.ListOfRooms);
             this.Controls.Add(this.NewRoomButton);
             this.Controls.Add(this.RoomList);
-            this.Controls.Add(this.menuStrip);
+            this.Controls.Add(this.menuStrip1);
             this.MaximizeBox = false;
             this.Name = "ZorkBuilder";
             this.Text = "ZorkBuilder";
@@ -316,8 +316,8 @@ namespace Zork.Builder
             this.DescriptionBox.ResumeLayout(false);
             this.DescriptionBox.PerformLayout();
             this.NeighborsBox.ResumeLayout(false);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -342,7 +342,7 @@ namespace Zork.Builder
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.BindingSource roomsBindingSource;
         private System.Windows.Forms.BindingSource gameViewModelBindingSource;
-        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;

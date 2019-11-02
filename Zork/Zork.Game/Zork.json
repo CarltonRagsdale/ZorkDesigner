@@ -3,7 +3,7 @@
     "Rooms": [
       {
         "Name": "West of House",
-        "Description": "This is an open field west of a white house, with a boarded front door. BIG PEEN",
+        "Description": "This is an open field west of a white house, with a boarded front door.",
         "Neighbors": {
           "North": "North of House",
           "South": "South of House",
@@ -67,11 +67,6 @@
           "West": "Forest 2",
           "South": "Forest 3"
         }
-      },
-      {
-        "Name": "fdsaf",
-        "Description": "fdasfsad",
-        "Neighbors": {}
       }
     ],
     "StartingLocation": "West of House"
